@@ -102,7 +102,7 @@ img {
     background-color: var(--primary-button-color);
     border-radius: 2px;
     position: absolute;
-    bottom: -1px;
+    bottom: -4px;
     left: 0;
 }
 
@@ -133,7 +133,7 @@ img {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.02em;
-    color: var(--primary-button-color);
+    color: var(--primary-dark-color);
     text-decoration: none;
     line-height: 1.5;
     padding: 24px 0;
@@ -281,9 +281,7 @@ body {
     height: 112px;
     border-radius: 4px;
     margin-bottom: 8px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
+    
 }
 
 .doing-section {
@@ -338,10 +336,8 @@ body {
 
 .team-section .list-item {
     width: calc((100% - 72px) / 4);
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16),
-        0px 2px 1px rgba(46, 47, 66, 0.08);
+   
+    
 }
 
 .employee-name {
@@ -549,9 +545,7 @@ body {
     flex-direction: column;
 }
 
-.filters {
-    padding: 96px 0 120px 0;
-}
+
 
 .button-portfolio {
     font-weight: 500;
@@ -598,8 +592,8 @@ body {
 
 }
 
-.card-images:hover .overlay,
-.card-images:focus .overlay {
+.card-images:hover .overlay-text,
+.card-images:focus .overlay-text {
     transform: translateY(0%);
     transition: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
@@ -647,12 +641,17 @@ body {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 .project-image:hover,
 .project-image:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-image:hover .overlay-text {
+    transform: translateY(0%);
+}
+
+.project-image:focus .overlay-text {
     transform: translateY(0%);
 }
 
