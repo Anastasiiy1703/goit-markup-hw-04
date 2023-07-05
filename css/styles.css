@@ -350,6 +350,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-top: 8px;
 }
 
 .employee-name .list-item {
@@ -704,6 +705,7 @@ body {
     transition-delay: 400ms;
     transition-timing-function: linear;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px;
 }
 
 .modal-btn {
@@ -739,3 +741,4 @@ body {
 .modal-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
